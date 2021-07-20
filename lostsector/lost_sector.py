@@ -152,10 +152,14 @@ def today_lost_sector_vegeta():
     curr_date = str(temp_date.month) + "/" + str(temp_date.day) + "/" + str(temp_date.year)
     curr_time = str(datetime.datetime.time(datetime.datetime.now(PST)))
     if curr_time < "10:00:00.00":
-        return f"Date: {curr_date} | " + csv_map[curr_date] + " | WARNING: It is before daily reset; these lost sectors will be in effect following reset."
+        return_string = f"Date: {curr_date} | " + csv_map[curr_date] + " | WARNING: It is before daily reset; these lost sectors will be in effect following reset."
+        if len(return_string) >= 200:
+            return f"Date: {curr_date} | " + csv_map[curr_date] + " | WARNING: These lost sectors will be in effect following reset."
+        else:
+            return return_string
     else:
         return f"Date: {curr_date} | " + csv_map[curr_date]
 
 # For debugging
 #print(today_lost_sector())
-#print(today_lost_sector_vegeta())
+print(today_lost_sector_vegeta())
