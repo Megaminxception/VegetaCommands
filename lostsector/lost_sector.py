@@ -162,4 +162,4 @@ def today_lost_sector_vegeta():
 
 # For debugging
 #print(today_lost_sector())
-print(today_lost_sector_vegeta())
+#print(today_lost_sector_vegeta())
