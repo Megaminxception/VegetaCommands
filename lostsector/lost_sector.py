@@ -205,7 +205,7 @@ def today_lost_sector():
             curr_date =  str(temp_date.month) + "/0" + str(temp_date.day) + "/" + str(temp_date.year)
     else:
         if temp_date.month < 10:
-            curr_date = "0" + str(temp_date.month) + "/0" + str(temp_date.day) + "/" + str(temp_date.year)
+            curr_date = "0" + str(temp_date.month) + "/" + str(temp_date.day) + "/" + str(temp_date.year)
         else:
             curr_date = str(temp_date.month) + "/" + str(temp_date.day) + "/" + str(temp_date.year)
         
@@ -250,7 +250,7 @@ def today_lost_sector_vegeta():
             curr_date =  str(temp_date.month) + "/0" + str(temp_date.day) + "/" + str(temp_date.year)
     else:
         if temp_date.month < 10:
-            curr_date = "0" + str(temp_date.month) + "/0" + str(temp_date.day) + "/" + str(temp_date.year)
+            curr_date = "0" + str(temp_date.month) + "/" + str(temp_date.day) + "/" + str(temp_date.year)
         else:
             curr_date = str(temp_date.month) + "/" + str(temp_date.day) + "/" + str(temp_date.year)
     curr_time = str(datetime.datetime.time(datetime.datetime.now(PST)))
