@@ -17,7 +17,7 @@ def nightfall():
 @app.route("/vegeta/lostsector")
 def oopsie():
   return '''If you're seeing this, this command needs to be updated!
-  tell the mods to change the urlfetch to https://megaminxception.pythonanywhere.com/lostsector."
+  tell the mods to change the urlfetch to https://megaminxception.pythonanywhere.com/lostsector .
   '''
 
 
