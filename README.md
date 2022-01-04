@@ -6,5 +6,8 @@ TO REQUEST A FEATURE, CREATE AN ISSUE IN THE ISSUES TAB AND TAG IT WITH THE "Fea
 Listed sites are useable with urlfetch commands to perform their respective functions.
 
 Lost Sector command (returns the daily lost sectors):
-http://megaminxception.pythonanywhere.com/vegeta/lostsector
+https://megaminxception.pythonanywhere.com/lostsector
+
+Nightfall command (returns the weekly Nightfall activity):
+https://megaminxception.pythonanywhere.com/nightfall
 
