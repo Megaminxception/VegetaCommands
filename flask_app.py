@@ -13,6 +13,14 @@ def lostSector():
 def nightfall():
   return getNightfall()
 
+@app.route("/banshee")
+def banshee():
+  pass
+
+@app.route("/ada")
+def ada():
+  pass
+
 # Handles legacy retrievals until command is updated
 @app.route("/vegeta/lostsector")
 def oopsie():
