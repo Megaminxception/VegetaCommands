@@ -8,6 +8,11 @@ def getNightfall():
 
   r = requests.get("https://www.bungie.net/Platform/Destiny2/Milestones/", headers=HEADERS)
 
+  # Handling API issues in a more elegant way
+  if r.status_code != 200:
+    return f"""Oh no! The Bungie API is acting a little weird right now, please
+     try again in a bit (Status code {r.status_code})."""
+
   nightfall = r.json()
 
   nf_hash_fake = nightfall['Response']['1942283261']['activities'][0]['activityHash']
