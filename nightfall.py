@@ -21,7 +21,7 @@ def getNightfall():
   if (id & (1 << (32 - 1))) != 0:
     id = id - (1 << 32)
 
-  database = "world_sql_content_3d029e66883b2c5765b6e4848f1c2965.sqlite3"
+  database = "world_sql_content_0f66fd1549744b23bb5d9f51c8603eaa.sqlite3"
   datab = sqlite3.connect(database)
   cursor = datab.cursor()
   cursor.execute('''
@@ -36,4 +36,4 @@ def getNightfall():
   return full_text
 
 # For testing
-# print (getNightfall())
+print (getNightfall())
